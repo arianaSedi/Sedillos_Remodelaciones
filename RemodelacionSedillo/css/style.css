@@ -1,0 +1,260 @@
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   GENERAL
+========================= */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.barra {
+  background: linear-gradient(135deg, #4ba1b4, #0e808d);
+}
+
+.logo-container {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: white;
+}
+
+.logo-navbar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 🔥 clave */
+  display: block;    /* evita espacios raros */
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #ffffff !important;
+}
+
+.nav-link {
+  color: #e5f7fb !important;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+.navbar .nav-link {
+  padding: 10px 25px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  background-color: #ffffff;
+  color: #4ba1b4 !important; /* celeste */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.navbar-nav .nav-item {
+  margin-left: 16px;
+}
+
+/* =========================
+   HERO / HOME
+========================= */
+.hero {
+  background: linear-gradient(
+      rgba(15, 76, 92, 0.85),
+      rgba(14, 165, 183, 0.85)
+    ),
+    url("../img/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+.hero .btn {
+  background-color: #ffffff;
+  color: #0e808d;
+  border: none;
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.hero .btn:hover {
+  color: #e5f7fb;
+  background-color: #0e808d;
+  border: 2px solid #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+
+
+/* =========================
+   SERVICIOS
+========================= */
+
+.servicio-card {
+  padding: 20px 10px;
+  border-radius: 15px;
+  border: 1px solid rgba(14, 94, 100, 0.25); /* borde elegante */
+  background-color: #ffffff;
+  box-shadow: 0 6px 16px rgba(14, 94, 100, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+/* Iconos de servicios */
+.icono-servicio {
+  width: 180px;          /* tamaño del icono */
+  height: 180px;
+  object-fit: contain;  /* no se deforma */
+  margin: 0 auto 10px;
+  display: block;
+}
+
+.servicio-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 26px rgba(14, 94, 100, 0.45);
+}
+
+.servicio-card p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+
+.section-divider {
+  width: 320px;
+  height: 4px;
+  background-color: #0ea5b7;
+  margin: 15px auto 30px;
+  border-radius: 10px;
+}
+
+h2 {
+  font-weight: 600;
+  color: #0f4c5c;
+  margin-bottom: 20px;
+}
+
+.servicio-card h5 {
+  font-weight: bold;
+  color: #0f4c5c;
+}
+
+.servicio-card h5 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+
+.servicio-card:hover h5 {
+  color: #0e5e64;
+}
+
+
+/* =========================
+   GALERÍA
+========================= */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.trabajos-section{
+  background: #2db8bd48; /* azul petróleo */
+}
+
+
+#trabajos img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(41, 44, 44, 0.705);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#trabajos img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(14, 94, 100, 0.705);
+  filter: brightness(95%);
+}
+
+
+/* =========================
+   CONTACTO
+========================= */
+.numero {
+  color: #0ea5b7;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.contacto {
+  background-color: #f3f3f3;
+}
+
+.contact-card {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  max-width: 420px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+  background-color: #083344;
+  font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .hero {
+    padding: 90px 15px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
