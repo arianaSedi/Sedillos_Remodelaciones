@@ -12,7 +12,7 @@
 ========================= */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f3f4f6;
+  background-color: #ddf0f7ad;
   color: #1f2937;
 }
 
@@ -25,7 +25,7 @@ body {
    NAVBAR
 ========================= */
 .barra {
-  background: linear-gradient(135deg, #4ba1b4, #0e808d);
+  background: linear-gradient(135deg, #0f4d5c, #0e808d);
 }
 
 .logo-container {
@@ -39,12 +39,14 @@ body {
 .logo-navbar {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* 🔥 clave */
+  object-fit: cover; 
   display: block;    /* evita espacios raros */
 }
 
 .navbar-brand {
   font-weight: bold;
+  font-style: italic;
+  font-family:'Poppins', sans-serif;;
   color: #ffffff !important;
 }
 
@@ -71,29 +73,24 @@ body {
 }
 
 .navbar-nav .nav-item {
-  margin-left: 16px;
+  margin-left: 18px;
 }
 
 /* =========================
    HERO / HOME
 ========================= */
-.hero {
-  background: linear-gradient(
-      rgba(15, 76, 92, 0.85),
-      rgba(14, 165, 183, 0.85)
-    ),
-    url("../img/fondo.jpg");
-  background-size: cover;
-  background-position: center;
-  padding: 120px 20px;
-}
 
 .hero h1 {
-  font-size: 42px;
+  font-size: 45px;
+  letter-spacing: 3px;
+  color: #ffffff;
+  font-family: 'Playfair Display', serif;
+  font-style: oblique;
 }
 
 .hero p {
-  font-size: 18px;
+  font-size: 20px;
+  color:#f6fbfc;
 }
 
 .hero .btn {
@@ -116,11 +113,95 @@ body {
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
 }
 
+.hero {
+  background:
+    linear-gradient(
+      rgba(15, 77, 92, 0.52),
+      rgba(14, 166, 183, 0.37)
+    ),
+    url("../img/foto (10).jpeg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 60vh;       
+  padding: 80px 20px;
+
+  display: flex;           /* centra mejor */
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-size: 160%;       
+    background-position: center top;
+    min-height: auto;
+    padding: 90px 15px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 70px 12px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+}
 
 
 /* =========================
    SERVICIOS
 ========================= */
+
+section.container.container-services{
+  background-color:#a6d8e462;
+}
+.section-text {
+  max-width: 700px;
+  font-size: 22px;
+  color: #555;
+}
+
+.icon {
+  font-size: 40px;
+  color: #0e808d;
+}
+
+section.container-services {
+  background-color: #f7fbfc;
+  padding: 60px 30px;
+  border-radius: 20px;
+}
+
+.servicio-img {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.servicio-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(14, 128, 141, 0.15),
+    rgba(14, 128, 141, 0.35)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.servicio-card:hover .servicio-img::after {
+  opacity: 1;
+}
 
 .servicio-card {
   padding: 20px 10px;
@@ -160,10 +241,11 @@ body {
   border-radius: 10px;
 }
 
-h2 {
-  font-weight: 600;
+h1 {
+  font-weight: 800;
   color: #0f4c5c;
   margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
 }
 
 .servicio-card h5 {
@@ -191,10 +273,6 @@ h2 {
   filter: invert(1);
 }
 
-.trabajos-section{
-  background: #2db8bd48; /* azul petróleo */
-}
-
 
 #trabajos img {
   width: 100%;
@@ -215,22 +293,60 @@ h2 {
 /* =========================
    CONTACTO
 ========================= */
-.numero {
-  color: #0ea5b7;
-  font-weight: bold;
-  font-size: 24px;
-}
 
-.contacto {
-  background-color: #f3f3f3;
+
+.contacto-text {
+  font-size: 17px;
+  color: #555;
 }
 
 .contact-card {
   background: white;
-  padding: 30px;
-  border-radius: 18px;
+  padding: 40px 30px;
+  border-radius: 20px;
   max-width: 420px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  box-shadow: 0 15px 35px rgba(14, 94, 100, 0.2);
+}
+
+.contact-icon {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  background-color: #d6f2f8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-icon i {
+  font-size: 32px;
+  color: #0e808d;
+}
+
+.contacto-label {
+  font-size: 14px;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.numero {
+  color: #0ea5b7;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.contacto-btn {
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-weight: 500;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contacto-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -238,9 +354,54 @@ h2 {
    FOOTER
 ========================= */
 .footer {
-  background-color: #083344;
-  font-size: 14px;
+  background: linear-gradient(135deg, #0f4d5c, #0e808d);
 }
+
+.footer-services {
+  font-size: 15px;
+  color: #d8f1f5;
+}
+
+.footer-link {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.footer-link i {
+  margin-right: 6px;
+  font-size: 18px;
+}
+
+.footer-link:hover {
+  color: #e5f7fb;
+  transform: translateY(-2px);
+}
+
+.footer-divider {
+  width: 60%;
+  margin: auto;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-copy {
+  color: #cce8ec;
+  font-size: 13px;
+}
+
+.footer-location {
+  color: #d8f1f5;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer-location i {
+  color: #a7e3ec;
+}
+
 
 /* =========================
    RESPONSIVE
@@ -256,5 +417,43 @@ h2 {
 
   .hero p {
     font-size: 16px;
+  }
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  color: white;
+}
+
+section {
+  animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
