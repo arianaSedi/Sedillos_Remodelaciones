@@ -2,7 +2,12 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Sedillo Remodelación</title>
+  <title>Sedillos Remodelaciones | Electricidad, Pintura y Mantenimiento en El Salvador</title>
+  <meta name="description" content="Remodelaciones y mantenimiento del hogar en El Salvador. Electricidad, pintura, aire acondicionado, cielo falso y más. Trabajo honesto y de calidad.">
+  <meta property="og:title" content="Sedillos Remodelaciones — El Salvador">
+  <meta property="og:description" content="Remodelaciones, electricidad, pintura y mantenimiento del hogar. Trabajo honesto y acabados de calidad.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="img/logocirculo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- BOOTSTRAP CSS -->
@@ -16,11 +21,11 @@
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark barra">
+<nav class="navbar navbar-expand-lg navbar-dark barra sticky-top">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center gap-3" href="#">
       <div class="logo-container">
-        <img src="img/barra.jpeg" class="logo-navbar">
+        <img src="img/logocirculo.png" class="logo-navbar" alt="Logo Sedillos Remodelaciones">
       </div> Sedillos Remodelación
     </a>
 
@@ -31,6 +36,7 @@
     <div class="collapse navbar-collapse" id="menu">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
         <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
         <li class="nav-item"><a class="nav-link" href="#trabajos">Trabajos</a></li>
         <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
@@ -46,7 +52,14 @@
     <p class="lead mt-3">
       Damos forma a tus ideas y proyectos, cuidando cada detalle.
     </p>
-    <a href="https://wa.me/50369694923" target="_blank" class="btn btn-info btn-lg mt-3">Contáctanos</a>
+    <div class="d-flex justify-content-center flex-wrap gap-3 mt-4">
+      <a href="https://wa.me/50369694923" target="_blank" class="btn btn-hero-primary">
+        <i class="bi bi-whatsapp me-2"></i>Escribir por WhatsApp
+      </a>
+      <a href="tel:+50369694923" class="btn btn-hero-secondary">
+        <i class="bi bi-telephone-fill me-2"></i>Llamar ahora
+      </a>
+    </div>
   </div>
 </section>
 
@@ -79,6 +92,38 @@
       <i class="bi bi-house-check icon"></i>
       <h5 class="mt-3">Todo tipo de trabajos</h5>
       <p>Desde trabajos pequeños hasta proyectos más grandes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- NOSOTROS -->
+<section id="nosotros" class="nosotros-section py-5">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5 text-center">
+        <img src="img/sedillo.jpeg" alt="Propietario de Sedillos Remodelaciones" class="nosotros-foto">
+      </div>
+      <div class="col-lg-7">
+        <h1 class="mb-3">Quiénes Somos</h1>
+        <div class="section-divider" style="margin: 0 0 25px 0;"></div>
+        <p class="nosotros-texto">Soy <strong>Cruz Sedillo</strong> un emprendedor con años de experiencia en remodelaciones y mantenimiento del hogar. Me dedico a transformar espacios con honestidad, responsabilidad y acabados de calidad.</p>
+        <p class="nosotros-texto mt-3">Atiendo personalmente cada proyecto — desde la cotización hasta el último detalle — porque me importa que el cliente quede 100% satisfecho.</p>
+          <div class="row mt-4 nosotros-stats">
+            <div class="col-4 text-center">
+              <div class="stat-numero">+50</div>
+              <div class="stat-label">Proyectos</div>
+            </div>
+            <div class="col-4 text-center">
+              <div class="stat-numero">+5</div>
+              <div class="stat-label">Años de exp.</div>
+            </div>
+            <div class="col-4 text-center">
+              <div class="stat-numero">100%</div>
+              <div class="stat-label">Satisfacción</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -158,10 +203,15 @@
     <h1 class="text-center mb-4">Trabajos Realizados</h1>
     <div class="section-divider"></div>
 
-    <div id="trabajosCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div id="trabajosCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+
+      <div class="carousel-indicators">
+      <button type="button" data-bs-target="#trabajosCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#trabajosCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#trabajosCarousel" data-bs-slide-to="2"></button>
+    </div>
 
       <div class="carousel-inner">
-
         <div class="carousel-item active">
           <div class="row g-4">
             <div class="col-md-4">
@@ -182,7 +232,7 @@
               <img src="img/foto (9).jpeg" class="img-fluid rounded" alt="">
             </div>
             <div class="col-md-4">
-              <img src="img/foto (10).jpeg" class="img-fluid rounded" alt="">
+              <img src="img/remodelacion.jpeg" class="img-fluid rounded" alt="">
             </div>
             <div class="col-md-4">
               <img src="img/foto (14).jpeg" class="img-fluid rounded" alt="">
@@ -196,7 +246,7 @@
               <img src="img/foto (6).jpeg" class="img-fluid rounded" alt="">
             </div>
             <div class="col-md-4">
-              <img src="img/foto (7).jpeg" class="img-fluid rounded" alt="">
+              <img src="img/foto 15.jpeg" class="img-fluid rounded" alt="">
             </div>
             <div class="col-md-4">
               <img src="img/foto.jpeg" class="img-fluid rounded" alt="">
@@ -221,31 +271,67 @@
 </section>
 
 <section id="contacto" class="contacto py-5">
-  <div class="container text-center">
-
-    <h1 class="mb-3">Contáctanos</h1>
+  <div class="container">
+    <h1 class="text-center mb-3">Contáctanos</h1>
     <div class="section-divider"></div>
+    <p class="text-center mb-5 contacto-text">Atención personalizada y cotizaciones sin compromiso.</p>
+    <div class="row g-5 justify-content-center">
 
-    <p class="mb-4 contacto-text">
-      Atención personalizada y cotizaciones sin compromiso.
-    </p>
-
-    <div class="contact-card mx-auto">
-
-      <div class="contact-icon mb-3">
-        <i class="bi bi-telephone-fill"></i>
+      <div class="col-lg-4">
+        <div class="contact-card h-100">
+          <div class="contact-icon mb-3"><i class="bi bi-telephone-fill"></i></div>
+          <p class="mb-1 contacto-label" style="text-align:center">Teléfono / WhatsApp</p>
+          <h4 class="numero mb-4" style="text-align:center">+503 6969-4923</h4>
+          <a href="https://wa.me/50369694923" target="_blank" class="btn btn-success btn-md contacto-btn w-100 mb-3">
+            <i class="bi bi-whatsapp me-2"></i> WhatsApp
+          </a>
+          <a href="tel:+50369694923" class="btn btn-outline-primary btn-md contacto-btn w-100 mb-4">
+            <i class="bi bi-telephone-fill me-2"></i> Llamar directamente
+          </a>
+          <div class="info-extra">
+            <p><i class="bi bi-clock me-2"></i><strong>Horario de atención:</strong> Lunes a Sábado, 7am – 6pm</p>
+            <p><i class="bi bi-geo-alt-fill me-2"></i><strong>Cobertura:</strong> La Unión, San Miguel, Usulutan y sus alrededores</p>
+          </div>
+        </div>
       </div>
 
-      <p class="mb-1 contacto-label">Teléfono / WhatsApp</p>
-      <h4 class="numero mb-4">+503 6969-4923</h4>
-
-      <a href="https://wa.me/50369694923" target="_blank"
-         class="btn btn-success btn-md contacto-btn">
-        <i class="bi bi-whatsapp me-2"></i> Contactar por WhatsApp
-      </a>
+      <div class="col-lg-6">
+        <div class="contact-card h-100">
+          <h5 class="mb-4" style="color:#0f4c5c; font-weight:700;"><i class="bi bi-clipboard-check me-2"></i>Solicitar Cotización</h5>
+          <form id="cotizacionForm">
+            <div class="mb-3">
+              <label class="form-label form-label-custom">Tu nombre</label>
+              <input type="text" class="form-control form-input-custom" placeholder="Ej: Juan García" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label form-label-custom">Tu número de teléfono</label>
+              <input type="tel" class="form-control form-input-custom" placeholder="Ej: +503 7000-0000" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label form-label-custom">Tipo de trabajo</label>
+              <select class="form-select form-input-custom" required>
+                <option value="" disabled selected>Selecciona un servicio...</option>
+                <option>Electricidad</option>
+                <option>Pintura</option>
+                <option>Aire Acondicionado</option>
+                <option>Cielo Falso o PVC</option>
+                <option>Fascia Decorativa</option>
+                <option>Tabla Roca</option>
+                <option>Otro / Varios servicios</option>
+              </select>
+            </div>
+            <div class="mb-4">
+              <label class="form-label form-label-custom">Describe tu proyecto (opcional)</label>
+              <textarea class="form-control form-input-custom" rows="3" placeholder="Ej: Quiero pintar 3 cuartos y reparar una instalación eléctrica..."></textarea>
+            </div>
+            <button type="button" onclick="enviarCotizacion()" class="btn btn-cotizacion w-100">
+              <i class="bi bi-send-fill me-2"></i>Enviar por WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
 
     </div>
-
   </div>
 </section>
 
@@ -255,28 +341,80 @@
 
 <!-- FOOTER -->
 <footer class="footer text-white">
-  <div class="container text-center py-4">
-
-    <p class="footer-location mb-3">
-      <i class="bi bi-geo-alt-fill me-2"></i> Atención en El Salvador
-    </p> 
-
-    <p class="footer-services mb-3">
-      Remodelación • Electricidad • Mantenimiento • Mejoras para el hogar
-    </p>
-
+  <div class="container py-5">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <div class="logo-container-footer">
+            <img src="img/logocirculo.png" alt="Logo" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+          </div>
+          <span class="footer-brand">Sedillos Remodelación</span>
+        </div>
+        <p class="footer-desc">Remodelaciones, electricidad, pintura y mantenimiento del hogar en El Salvador.</p>
+      </div>
+      <div class="col-md-2">
+        <h6 class="footer-heading">Navegación</h6>
+        <ul class="list-unstyled footer-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#trabajos">Trabajos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h6 class="footer-heading">Servicios</h6>
+        <ul class="list-unstyled footer-links">
+          <li>Electricidad</li>
+          <li>Pintura interior y exterior</li>
+          <li>Aire Acondicionado</li>
+          <li>Cielo Falso / PVC</li>
+          <li>Fascia Decorativa</li>
+          <li>Tabla Roca</li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h6 class="footer-heading">Contacto</h6>
+        <ul class="list-unstyled footer-links">
+          <li><i class="bi bi-telephone-fill me-2"></i>+503 6969-4923</li>
+          <li><i class="bi bi-whatsapp me-2"></i><a href="https://wa.me/50369694923" target="_blank">WhatsApp</a></li>
+          <li><i class="bi bi-clock me-2"></i>Lun–Sáb, 7am–6pm</li>
+          <li><i class="bi bi-geo-alt-fill me-2"></i>El Salvador</li>
+        </ul>
+      </div>
+    </div>
     <hr class="footer-divider my-4">
-
-    <small class="footer-copy">
-      © 2026 Sedillo Remodelaciones. Todos los derechos reservados.
-    </small>
-
+    <div class="text-center">
+      <small class="footer-copy">© 2026 Sedillos Remodelaciones. Todos los derechos reservados.</small>
+    </div>
   </div>
 </footer>
 
 <!-- BOOTSTRAP JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/app.js"></script>
+
+<script>
+function enviarCotizacion() {
+  const form = document.getElementById('cotizacionForm');
+  const inputs = form.querySelectorAll('[required]');
+  let valido = true;
+  inputs.forEach(input => {
+    if (!input.value.trim()) { input.classList.add('is-invalid'); valido = false; }
+    else { input.classList.remove('is-invalid'); }
+  });
+  if (!valido) return;
+  const nombre   = form.querySelector('input[type="text"]').value;
+  const telefono = form.querySelector('input[type="tel"]').value;
+  const servicio = form.querySelector('select').value;
+  const detalle  = form.querySelector('textarea').value;
+  const mensaje = `Hola, me llamo *${nombre}* y quiero una cotización.%0A` +
+                  `📞 Mi número: ${telefono}%0A` +
+                  `🔧 Servicio: ${servicio}%0A` +
+                  (detalle ? `📝 Detalles: ${detalle}` : '');
+  window.open(`https://wa.me/50369694923?text=${mensaje}`, '_blank');
+}
+</script>
 
 </body>
 </html>
