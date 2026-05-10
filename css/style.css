@@ -480,13 +480,6 @@ section {
 }
 .btn-hero-secondary:hover { background-color: #ffffff; color: #0e808d; transform: translateY(-3px); }
 
-/* NOSOTROS */
-.nosotros-section { background-color: #f7feff; border-top: 1px solid #e0f4f8; border-bottom: 1px solid #e0f4f8; }
-.nosotros-foto { width: 100%; max-width: 380px; height: 420px; object-fit: cover; border-radius: 20px; box-shadow: 0 20px 50px rgba(14,94,100,0.3); }
-.nosotros-texto { font-size: 17px; color: #444; line-height: 1.8; }
-.nosotros-stats { background: linear-gradient(135deg, #0f4d5c, #0e808d); border-radius: 15px; padding: 20px 10px; }
-.stat-numero { font-size: 32px; font-weight: 800; color: #ffffff; font-family: 'Playfair Display', serif; }
-.stat-label { font-size: 13px; color: #cce8ec; text-transform: uppercase; letter-spacing: 1px; }
 
 /* DOTS CAROUSEL */
 .carousel-indicators [data-bs-target] { background-color: #0e808d; width: 10px; height: 10px; border-radius: 50%; border: none; }
